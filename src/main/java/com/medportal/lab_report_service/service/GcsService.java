@@ -12,7 +12,7 @@ import java.io.IOException;
 @Service
 public class GcsService {
 
-    @Value("${gcp.bucket.name:medportal-lab-reports}")
+    @Value("${gcp.bucket.name}")
     private String bucketName;
 
     public String uploadFile(MultipartFile file) throws IOException {
